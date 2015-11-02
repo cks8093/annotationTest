@@ -64,7 +64,6 @@ public class Score {
 	  - init-method 속성과 같음*/
 	@PostConstruct
 	public void initPool() {
-		
 	}
 
 	/*- 컨테이너에서 객체를 제거하기 전에 호출 될 메서드에 적용

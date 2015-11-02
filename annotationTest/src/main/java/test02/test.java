@@ -5,14 +5,14 @@ import org.springframework.context.support.ClassPathXmlApplicationContext;
 
 public class test {
 	public static void main(String[] args) {
-		test1();
-		//test2();
+		//test1();
+		test2();
 	}
 
 	private static void test2() {
 		System.out.println("===== @Configuration profile을 이용한 설정 ==== ");
 		AnnotationConfigApplicationContext context = new AnnotationConfigApplicationContext();
-		context.getEnvironment().setActiveProfiles("dev");
+		context.getEnvironment().setActiveProfiles("proc");
 		context.register(ScoreClassConfigDev.class, ScoreClassConfigProc.class, ScoreConfigParent.class);
 		context.refresh();
 		
